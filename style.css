@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(92, 83, 83);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgb(176, 176, 255);
+}
+
+#screen {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(209, 189, 163);
+    border-radius: 8px;
+    border: 2px solid black;    
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+}
+
+#clear {
+    grid-column: span 2;
+}
+
+#delete, #add, #seven, #eight, #nine, #sub, #four, #five, #six, #divide, #one, #two, #three, #multiply, #zero, #dot {
+    grid-column: span 1;
+}
+
+#equals {
+    grid-column: span 2;
+}
